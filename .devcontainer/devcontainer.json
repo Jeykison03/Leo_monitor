@@ -1,0 +1,29 @@
+{
+    "name": "Rust & Vue Heart Rate Monitor",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        },
+        "ghcr.io/devcontainers/features/rust:1": {}
+    },
+    "forwardPorts": [
+        8080,
+        3000,
+        27017
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust-analyzer",
+                "vue.volar",
+                "tamasfe.even-better-toml"
+            ]
+        }
+    },
+    "postCreateCommand": "cd frontend && npm install && cd ../backend && cargo build"
+}
