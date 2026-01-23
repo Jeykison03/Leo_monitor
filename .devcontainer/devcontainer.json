@@ -1,6 +1,11 @@
 {
-    "name": "Leo Monitor",
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "name": "Leo Monitor - Rust Environment",
+    "image": "mcr.microsoft.com/devcontainers/rust:1-1-bookworm",
+    "features": {
+        "ghcr.io/devcontainers/features/node-js:1": {
+            "version": "20"
+        }
+    },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -16,5 +21,6 @@
         8080,
         5173
     ],
-    "remoteUser": "codespace"
+    "postCreateCommand": "cd frontend && npm install",
+    "remoteUser": "vscode"
 }
