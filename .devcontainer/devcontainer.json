@@ -1,5 +1,5 @@
 {
-    "name": "Heartrate Monitor (Safe Mode)",
+    "name": "Leo Monitor",
     "image": "mcr.microsoft.com/devcontainers/universal:2",
     "customizations": {
         "vscode": {
@@ -16,6 +16,5 @@
         8080,
         5173
     ],
-    "postCreateCommand": "echo 'Setting up environment...' && cd backend && cargo fetch && cd ../frontend && npm install",
     "remoteUser": "codespace"
 }
