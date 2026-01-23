@@ -1,5 +1,5 @@
 {
-    "name": "Leo Monitor - Rust Environment",
+    "name": "Leo Monitor - RUST_ACTIVE_v2",
     "image": "mcr.microsoft.com/devcontainers/rust:1-1-bookworm",
     "features": {
         "ghcr.io/devcontainers/features/node-js:1": {
