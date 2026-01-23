@@ -1,8 +1,6 @@
 {
-    "name": "Heartrate Monitor",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
+    "name": "Heartrate Monitor (Safe Mode)",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -19,5 +17,5 @@
         5173
     ],
     "postCreateCommand": "echo 'Setting up environment...' && cd backend && cargo fetch && cd ../frontend && npm install",
-    "remoteUser": "vscode"
+    "remoteUser": "codespace"
 }
