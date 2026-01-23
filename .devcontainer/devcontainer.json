@@ -1,8 +1,7 @@
 {
     "name": "Heartrate Monitor",
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "features": {
-        "ghcr.io/devcontainers/features/mongodb:1": {}
+    "build": {
+        "dockerfile": "Dockerfile"
     },
     "customizations": {
         "vscode": {
@@ -20,5 +19,5 @@
         5173
     ],
     "postCreateCommand": "echo 'Setting up environment...' && cd backend && cargo fetch && cd ../frontend && npm install",
-    "remoteUser": "codespace"
+    "remoteUser": "vscode"
 }
