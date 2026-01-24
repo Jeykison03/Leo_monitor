@@ -1,6 +1,14 @@
 {
-    "name": "Leo Monitor - NO_FEATURES_MODE",
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "name": "Leo Monitor",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/rust:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "20"
+        }
+    },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -16,6 +24,6 @@
         8080,
         5173
     ],
-    "postCreateCommand": "cd backend && cargo --version",
+    "postCreateCommand": "cargo --version",
     "remoteUser": "codespace"
 }
