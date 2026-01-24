@@ -25,5 +25,5 @@
         5173
     ],
     "postCreateCommand": "cargo --version",
-    "remoteUser": "codespace"
+    "remoteUser": "vscode"
 }
