@@ -13,7 +13,7 @@ pub struct MongoRepo {
 
 impl MongoRepo {
     pub async fn init() -> Self {
-        let uri = env::var("MONGODB_URI").unwrap_or_else(|_| "mongodb://localhost:27017".to_string());
+        let uri = env::var("MONGODB_URI").expect("MONGODB_URI must be set in .env file");
         
         info!("Connecting to MongoDB at {}", uri);
         
