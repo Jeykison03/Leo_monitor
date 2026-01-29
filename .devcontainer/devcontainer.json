@@ -24,6 +24,6 @@
         8080,
         5173
     ],
-    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y pkg-config libudev-dev && cargo --version && cd frontend && npm install",
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y pkg-config libudev-dev && cargo --version && cd frontend && npm install && chmod +x node_modules/.bin/vite",
     "remoteUser": "vscode"
 }
