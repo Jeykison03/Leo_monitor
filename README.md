@@ -17,7 +17,10 @@ Real-time heart rate monitoring system with a Rust backend and Vue 3 frontend.
     cd frontend
     npm run dev
     ```
-
+## Default Login
+- **Email:** `admin@gmail.com`
+- **Password:** `admin2026$`
+  
 ## Features
 - **Real-time Visualization**: Live heart rate graph.
 - **Roles**: Doctor & Assistant login support.
