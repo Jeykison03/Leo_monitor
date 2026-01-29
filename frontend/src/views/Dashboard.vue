@@ -21,7 +21,9 @@ let socket = null
 const connectWebSocket = () => {
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     // Port 8080 is our backend
-    const wsUrl = `${protocol}//localhost:8080/ws/heart_rate`;
+    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const host = window.location.host; 
+    const wsUrl = `${protocol}//${host}/ws/heart_rate`;
     
     socket = new WebSocket(wsUrl);
 
